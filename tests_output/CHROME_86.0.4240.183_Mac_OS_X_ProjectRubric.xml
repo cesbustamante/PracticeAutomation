@@ -1,20 +1,77 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
             failures="0"
-            tests="2">
+            tests="5">
 
   <testsuite name="ProjectRubric"
     errors="0" failures="0" hostname="" id="" package="ProjectRubric" skipped="0"
-    tests="2" time="0.9040" timestamp="">
+    tests="5" time="59.48" timestamp="">
   
-    <testcase name="Odds and Evens" classname="ProjectRubric" time="0.7060" assertions="2">
+    <testcase name="Odds and Evens" classname="ProjectRubric" time="1.381" assertions="6">
+
+    
+
+    
+
+    
+
+    
 
     
 
     
     </testcase>
   
-    <testcase name="Filter Object" classname="ProjectRubric" time="0.1980" assertions="1">
+    <testcase name="Filter Object" classname="ProjectRubric" time="0.7980" assertions="6">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Filter String" classname="ProjectRubric" time="56.43" assertions="10">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Palindrome" classname="ProjectRubric" time="0.6420" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Sum" classname="ProjectRubric" time="0.2260" assertions="1">
 
     
     </testcase>

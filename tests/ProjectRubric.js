@@ -31,21 +31,19 @@ module.exports = {
             .expect.element('@resultOdds').text.to.contain(myValues.odds)
     },
     'Filter Object': browser => {
-        rubuc
-        var myObject = {
-            object: 'name',
-            noObject2: 'Hack0r'
-        }
+        var object = 'name'
+        var noObject = 'Hack0r'
+
         rubic
         //input object
-            .setValue('@inputFilterObject', 'name')
+            .setValue('@inputFilterObject', object)
             //click Filter Object button
             .click('@filterObjectButton')
             //check if output filter the objecs 
             //Only objects with that property in this case the list may contain name
-            .expect.element('@resultObject').text.to.contain('name')
+            .expect.element('@resultObject').text.to.contain(object)
             //input a not object
-            .setValue('@inputFilterObject', 'Hack0r')
+            .setValue('@inputFilterObject', noObject)
             //click Filter Object button
             .click('@filterObjectButton')
             //check if output filter the  not objecs 
@@ -53,20 +51,18 @@ module.exports = {
             .expect.element('@resultObject').text.to.contain('Filtered: []')
     },
     'Filter String': browser => {
-        rubuc
-        var myString = {
-            string: 'Tyler',
-            noString: 'Megan',
-        }
+        var myString = 'Tyler'
+        var myNoString = 'Megan'
+
         rubic
         //input string contain on the list 
-            .setValue('@inputFilterString', myString.string)
+            .setValue('@inputFilterString', myString)
             //click Filter String button
             .click('@filterStringButton')
             //check if output the correct string
-            .expect.element('@resultString').text.to.equal(myString.string)
+            .expect.element('@resultString').text.to.equal(myString)
             //input a not object
-            .setValue('@inputFilterObject', 'Hack0r')
+            .setValue('@inputFilterObject', myNoString)
             //click Filter String button
             .click('@filterStringButton')
             //check if output filter the  no string 
@@ -75,36 +71,34 @@ module.exports = {
     },
 
     'Palindrome': browser => {
-        rubuc
-        var myPalindrome = {
-            palindrome: 'radar',
-            nopalindrome: 'nada'
-        }
+        rubic
+        var myPalindrome = 'ana'
+        var myNonPalindrome = 'nada'
+
         rubic
         //input palindrome 
-            .setValue('@inputPalindrome', myPalindrome.palindrome)
+            .setValue('@inputPalindrome', myPalindrome)
             // click check button
             .click('@plindromeButton')
             //check palindrome output
             .expect.element('@resultPalindrome').text.to.contain('true')
         rubic
         //input numbers
-            .setValue('@inputPalindrome', myPalindrome.nopalindrome)
+            .setValue('@inputPalindrome', myNonPalindrome)
             // click check button
             .click('@plindromeButton')
             //check no-palindrome output
             .expect.element('@resultPalindrome').text.to.contain('false')
     },
     'Sum': browser => {
-        rubuc
-        var mySume = {
-            sume1: '150',
-            sume2: '200'
-        }
+        rubic
+        var mySume1 = 'ana'
+        var mySume2 = 'nada'
+
         rubic
         //sume 
-            .setValue('@inputSum1', mySume.sume1)
-            .setValue('@inputSum2', mySume.sume2)
+            .setValue('@inputSum1', mySume1)
+            .setValue('@inputSum2', mySume2)
             // click Sum button
             .click('@resultSum')
             //check palindrome output
