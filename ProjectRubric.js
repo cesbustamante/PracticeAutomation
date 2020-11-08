@@ -18,6 +18,7 @@ module.exports = {
             odds: '123',
             odds1: '-123',
             odds2: '-1524363635',
+            numberList: '1,4,5,8,12,20'
         }
         rubic
         //input even numbers
@@ -71,6 +72,28 @@ module.exports = {
             .click('@splitButton')
             //check odd output
             .expect.element('@resultOdds').text.to.contain(myValues.odds2)
+        rubic
+        //clear previous value
+            .clearValue('@inputEvens')
+            //Leave empty the input field (to genereate a null result) on Evens
+            // click slit button
+            .click('@splitButton')
+            //check odd output
+            //     .expect.element('@resultEven').text.to.contain('Evens: [null]')
+            // rubic
+            //clear previous value
+            .clearValue('@inputEvens')
+            //input a list of number and check if the app
+            //can identify which ones are even and which ones are odds
+            //input list of numbers (1,4,5,8,12,20)
+            .setValue('@inputEvens', myValues.numberList)
+            .click('@splitButton')
+            //check odd output
+            //even may contain 4,8,12,20
+            .expect.element('@resultEven').text.to.contain('4,8,12,20')
+        rubic
+        //odds may contain 1,5
+            .expect.element('@resultOdds').text.to.contain('1,5')
     },
     'Filter Object': browser => {
         rubic
