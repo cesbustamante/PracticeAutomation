@@ -5,43 +5,9 @@
 
   <testsuite name="ProjectRubric"
     errors="0" failures="0" hostname="" id="" package="ProjectRubric" skipped="0"
-    tests="5" time="59.48" timestamp="">
+    tests="5" time="59.40" timestamp="">
   
-    <testcase name="Odds and Evens" classname="ProjectRubric" time="1.381" assertions="6">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="Filter Object" classname="ProjectRubric" time="0.7980" assertions="6">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="Filter String" classname="ProjectRubric" time="56.43" assertions="10">
-
-    
-
-    
+    <testcase name="Odds and Evens" classname="ProjectRubric" time="1.398" assertions="8">
 
     
 
@@ -60,7 +26,11 @@
     
     </testcase>
   
-    <testcase name="Palindrome" classname="ProjectRubric" time="0.6420" assertions="4">
+    <testcase name="Filter Object" classname="ProjectRubric" time="0.7590" assertions="6">
+
+    
+
+    
 
     
 
@@ -71,7 +41,41 @@
     
     </testcase>
   
-    <testcase name="Sum" classname="ProjectRubric" time="0.2260" assertions="1">
+    <testcase name="Filter String" classname="ProjectRubric" time="56.55" assertions="10">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Palindrome" classname="ProjectRubric" time="0.4770" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Sum" classname="ProjectRubric" time="0.2100" assertions="1">
 
     
     </testcase>
