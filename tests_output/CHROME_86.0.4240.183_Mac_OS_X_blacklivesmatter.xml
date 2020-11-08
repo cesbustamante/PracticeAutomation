@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="2">
+
+  <testsuite name="blacklivesmatter"
+    errors="1" failures="0" hostname="" id="" package="blacklivesmatter" skipped="0"
+    tests="2" time="14.19" timestamp="">
+  
+    <testcase name="Donate to black lives matter" classname="blacklivesmatter" time="11.18" assertions="0">
+    </testcase>
+  
+    <testcase name="check if donate buttom works" classname="blacklivesmatter" time="3.009" assertions="0">
+    <error message="An error occurred while running .click() command on &lt;#menu-primary-menu &gt; li.menu-highlight.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-2813.nav-item &gt; a&gt;: from unknown error: web view not found,  (Session info: chrome=86.0.4240.183),  (Driver info: chromedriver=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}),platform=Mac OS X 10.15.7 x86_64); no such window: target window already closed" type="error"><![CDATA[
+    NoSuchElementError: An error occurred while running .click() command on &lt;#menu-primary-menu &gt; li.menu-highlight.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-2813.nav-item &gt; a&gt;: from unknown error: web view not found,  (Session info: chrome=86.0.4240.183),  (Driver info: chromedriver=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}),platform=Mac OS X 10.15.7 x86_64); no such window: target window already closed
+    at ClickElement.noSuchElementError (/usr/local/lib/node_modules/nightwatch/lib/element/command.js:399:12)
+    at Object.errorHandler (/usr/local/lib/node_modules/nightwatch/lib/api/element-commands/_baseElementCommand.js:42:30)
+    at PeriodicPromise.runAction (/usr/local/lib/node_modules/nightwatch/lib/utils/periodic-promise.js:64:29)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+        NoSuchElementError: An error occurred while running .click() command on &lt;#menu-primary-menu &gt; li.menu-highlight.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-2813.nav-item &gt; a&gt;: from unknown error: web view not found,  (Session info: chrome=86.0.4240.183),  (Driver info: chromedriver=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}),platform=Mac OS X 10.15.7 x86_64); no such window: target window already closed
+   {&#34;status&#34;:-1,&#34;state&#34;:&#34;&#34;,&#34;code&#34;:&#34;&#34;,&#34;value&#34;:{&#34;message&#34;:&#34;no such window: target window already closed&#34;,&#34;error&#34;:[&#34;from unknown error: web view not found&#34;,&#34;  (Session info: chrome=86.0.4240.183)&#34;,&#34;  (Driver info: chromedriver=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}),platform=Mac OS X 10.15.7 x86_64)&#34;]},&#34;errorStatus&#34;:23,&#34;error&#34;:&#34;The specified window could not be found. – no such window: target window already closed&#34;,&#34;httpStatusCode&#34;:200}
+       at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

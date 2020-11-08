@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="3"
+            failures="0"
+            tests="5">
+
+  <testsuite name="problem"
+    errors="3" failures="0" hostname="" id="" package="problem" skipped="0"
+    tests="5" time="10.89" timestamp="">
+  
+    <testcase name="Problem 1" classname="problem" time="0.3940" assertions="0">
+    </testcase>
+  
+    <testcase name="Problem 2" classname="problem" time="0.07200" assertions="0">
+    </testcase>
+  
+    <testcase name="Problem 3" classname="problem" time="0.08700" assertions="0">
+    </testcase>
+  
+    <testcase name="Problem 4" classname="problem" time="0.05200" assertions="0">
+    </testcase>
+  
+    <testcase name="Problem 5" classname="problem" time="10.29" assertions="0">
+    <error message="Error while running &#34;setValue&#34; command: &#34;Error: setValue method expects 3 (or 4 if using implicit &#34;css selector&#34; strategy) arguments - 2 given.
+&#34;" type="error"><![CDATA[
+    Error
+    at Object.Problem 5 (/Users/cesarbustamante/DevMountain/PracticeAutomation/tests/problem.js:55:14)
+    at Context.call (/usr/local/lib/node_modules/nightwatch/lib/testsuite/context.js:379:35)
+    at TestCase.run (/usr/local/lib/node_modules/nightwatch/lib/testsuite/testcase.js:53:31)
+    at Runnable.__runFn (/usr/local/lib/node_modules/nightwatch/lib/testsuite/index.js:376:80)
+    at Runnable.run (/usr/local/lib/node_modules/nightwatch/lib/testsuite/runnable.js:123:21)
+    at TestSuite.createRunnable (/usr/local/lib/node_modules/nightwatch/lib/testsuite/index.js:443:33)
+    at TestSuite.handleRunnable (/usr/local/lib/node_modules/nightwatch/lib/testsuite/index.js:448:18)
+    at /usr/local/lib/node_modules/nightwatch/lib/testsuite/index.js:376:21
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async DefaultRunner.runTestSuite (/usr/local/lib/node_modules/nightwatch/lib/runner/test-runners/default.js:68:7)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+        NoSuchElementError: An error occurred while running .click() command on &lt;[name=&#34;employee4&#34;&gt;: 
+   {&#34;sessionId&#34;:&#34;2add47b630bf04e8cab80ce0c3844b7c&#34;,&#34;status&#34;:0,&#34;value&#34;:[]}
+       at processTicksAndRejections (internal/process/task_queues.js:93:5)
+  NoSuchElementError: An error occurred while running .clearValue() command on &lt;[name=&#34;phoneEntry&#34;]&gt;: 
+   {&#34;sessionId&#34;:&#34;2add47b630bf04e8cab80ce0c3844b7c&#34;,&#34;status&#34;:0,&#34;value&#34;:[]}
+       at processTicksAndRejections (internal/process/task_queues.js:93:5)
+  Error: Error while running &#34;setValue&#34; command: &#34;Error: setValue method expects 3 (or 4 if using implicit &#34;css selector&#34; strategy) arguments - 2 given.
+  &#34;
+       at Object.Problem 5 (/Users/cesarbustamante/DevMountain/PracticeAutomation/tests/problem.js:55:14)
+       at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>
