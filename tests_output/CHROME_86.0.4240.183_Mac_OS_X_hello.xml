@@ -1,28 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
             failures="0"
-            tests="1">
+            tests="0">
 
-  <testsuite name="employeePractice2"
-    errors="0" failures="0" hostname="" id="" package="employeePractice2" skipped="0"
-    tests="1" time="1.219" timestamp="">
-  
-    <testcase name="Test Cases" classname="employeePractice2" time="1.219" assertions="7">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    </testcase>
+  <testsuite name="hello"
+    errors="0" failures="0" hostname="" id="" package="hello" skipped="0"
+    tests="0" time="0.000" timestamp="">
   
 
   

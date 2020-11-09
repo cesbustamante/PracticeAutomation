@@ -3,17 +3,11 @@
             failures="0"
             tests="1">
 
-  <testsuite name="employeePractice2"
-    errors="0" failures="0" hostname="" id="" package="employeePractice2" skipped="0"
-    tests="1" time="1.219" timestamp="">
+  <testsuite name="googleSearch"
+    errors="0" failures="0" hostname="" id="" package="googleSearch" skipped="0"
+    tests="1" time="5.160" timestamp="">
   
-    <testcase name="Test Cases" classname="employeePractice2" time="1.219" assertions="7">
-
-    
-
-    
-
-    
+    <testcase name="My Search Test" classname="googleSearch" time="5.160" assertions="4">
 
     
 

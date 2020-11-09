@@ -1,28 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites errors="0"
+<testsuites errors="1"
             failures="0"
-            tests="1">
+            tests="0">
 
-  <testsuite name="employeePractice2"
-    errors="0" failures="0" hostname="" id="" package="employeePractice2" skipped="0"
-    tests="1" time="1.219" timestamp="">
-  
-    <testcase name="Test Cases" classname="employeePractice2" time="1.219" assertions="7">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    </testcase>
+  <testsuite name="projectWanted"
+    errors="1" failures="0" hostname="" id="" package="projectWanted" skipped="0"
+    tests="0" time="0.000" timestamp="">
   
 
   
@@ -53,6 +36,19 @@
   
 
     
+    <error message="wanted.end is not a function"><![CDATA[
+      TypeError: wanted.end is not a function
+    at Object.after (/Users/cesarbustamante/DevMountain/PracticeAutomation/tests/projectWanted.js:14:14)
+    at Context.callAsync (/usr/local/lib/node_modules/nightwatch/lib/testsuite/context.js:395:20)
+    at Context.invokeMethod (/usr/local/lib/node_modules/nightwatch/lib/testsuite/context.js:346:21)
+    at /usr/local/lib/node_modules/nightwatch/lib/testsuite/hooks/_basehook.js:79:24
+    at new Promise (&lt;anonymous&gt;)
+    at AfterAll.run (/usr/local/lib/node_modules/nightwatch/lib/testsuite/hooks/_basehook.js:54:14)
+    at Runnable.__runFn (/usr/local/lib/node_modules/nightwatch/lib/testsuite/index.js:186:35)
+    at Runnable.run (/usr/local/lib/node_modules/nightwatch/lib/testsuite/runnable.js:123:21)
+    at TestSuite.createRunnable (/usr/local/lib/node_modules/nightwatch/lib/testsuite/index.js:443:33)
+    at TestSuite.handleRunnable (/usr/local/lib/node_modules/nightwatch/lib/testsuite/index.js:448:18)
+      ]]></error>  
 
   
   </testsuite>
