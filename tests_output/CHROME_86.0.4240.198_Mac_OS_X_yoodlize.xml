@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="1">
+
+  <testsuite name="yoodlize"
+    errors="0" failures="0" hostname="" id="" package="yoodlize" skipped="0"
+    tests="1" time="37.31" timestamp="">
+  
+    <testcase name="Test the (see all) on home page of yoodlize" classname="yoodlize" time="37.31" assertions="14">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

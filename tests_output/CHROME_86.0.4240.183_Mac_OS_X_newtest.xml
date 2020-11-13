@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="4">
+
+  <testsuite name="newtest"
+    errors="0" failures="0" hostname="" id="" package="newtest" skipped="0"
+    tests="4" time="9.259" timestamp="">
+  
+    <testcase name="check addition" classname="newtest" time="5.308" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="check subtraction" classname="newtest" time="1.577" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="check division" classname="newtest" time="1.389" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="check multiplication" classname="newtest" time="0.9850" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

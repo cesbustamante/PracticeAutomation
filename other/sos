@@ -1,0 +1,135 @@
+var wantedFields = (browser, header, MKE, OriginatingAgencyIdentifier, name,
+        sex, race, height, weight, hair, offemse, dateofWarrant) => {
+        browser
+            .waitForElementVisible('#pageWrap')
+            .click('.bm-burger-button')
+            .waitForElementVisible('.bm-item-list')
+        browser
+            .click('@EnterWantedB')
+            .pause(1000)
+            .click('#react-burger-cross-btn')
+            .setValue('@inputHeader', header)
+            .setValue('@inpuMKE', MKE)
+            .setValue('@inpuOriginatingAgencyIdentifier', OriginatingAgencyIdentifier)
+            .setValue('@inpuName', name)
+            .click(sex)
+            .click(race)
+            .click('@inpuHeight', height)
+            .click('@inpuWeight', weight)
+            .click('@inpuHair', hair)
+            .click('@inpuHair', offemse)
+            .click('@inpuDateofWarrant', dateofWarrant)
+            .click('@submitB')
+    },
+
+    var wanted = {}
+module.exports = {
+    beforeEach: browser => {
+        wanted = browser.page.wantedPage()
+        wanted
+            .navigate()
+    },
+    after: browser => {
+        wanted
+            .end()
+    },
+
+    //bon
+    // 'boundary max': browser => {
+    //     //Header 19 any allowed, MKE, 4 alpga, Origination 9alpha, Name 30 any allowed
+    //     //Sex Unknown, Race Unknown, Heigh 3, Weaight 3, Hair 10 alpha, Offense 15 any allowed
+    //     //Date to today +1 day, to account for time zone differences
+    //     wantedFields(wanted, 'ABDOMINOHYSTEROTOMY', 'ABCD', 'Something',
+    //         'pseudopseudohypoparathyroidism', '@unknown', '@runknown',
+    //         '578', '230', 'Skateboard', 'Prognostication', '12092020')
+
+}
+
+//var myData = [{
+                //What type of loan will you be needing? Home Parchuse 
+                typeOfloan: 'option[value = "Home Purchase"]',
+                //What type of property are you purchasing? Single Family Home
+                typeOfProperty: 'option[value="Single Family Home"]',
+                //In what city will the property be located?
+                propertyLocate: 'Madison',
+                // What property are you looking to use the loan on? Primary Home
+                loanUse: 'button[value="Primary Home"]',
+                //Have you already found your new home ? yes
+                foundHome: 'button[name="yesButton"]',
+                // Are you currently working with a real estate agent? yes
+                WorkingWithAgen: 'button[name="yesButton"]',
+                //What is the estimated purchase price?
+                estimatedPrice: '250000',
+                //How much are you putting down as a down payment?
+                downPayment: '25000',
+                //Estimate your credit score Excellent
+                creditScore: 'button[value="excellent"]',
+                //Have you had a bankruptcy or foreclosure in the past seven years? no
+                bankruptcy: 'button[value="Has never been in bankruptcy"]',
+                //What is your address?
+                street: '1145st',
+                streetOptinal: 'apt1',
+                cityStateZip: '53965',
+                //What is your name ? first, last, email
+                firstName: 'Julian',
+                lastName: 'Benito',
+                email: 'benito@msn.com',
+
+            },
+            { //What type of loan will you be needing? refinance 
+                typeOfloan: 'option[value="Refinance"]',
+                //What type of property are you purchasing? Single Family Home
+                typeOfProperty: 'option[value="Town Home"]',
+                //In what city will the property be located?
+                propertyLocate: 'Madison',
+                // What property are you looking to use the loan on? Primary Home
+                loanUse: 'button[value="Rental Property"]',
+                //Have you already found your new home ? yes
+                foundHome: 'button[name="yesButton"]',
+                // Are you currently working with a real estate agent? yes
+                WorkingWithAgen: 'button[name="yesButton"]',
+                //What is the estimated purchase price?
+                estimatedPrice: '250000',
+                //How much are you putting down as a down payment?
+                downPayment: '25000',
+                //Estimate your credit score Excellent
+                creditScore: 'button[value="fair"]',
+                //Have you had a bankruptcy or foreclosure in the past seven years? no
+                bankruptcy: 'button[value="Has had bankruptcy before"]',
+                //What is your address?
+                street: '1145st',
+                streetOptinal: 'apt1',
+                cityStateZip: '53965',
+                //What is your name ? first, last, email
+                firstName: 'Julian',
+                lastName: 'Benito',
+                email: 'benito@msn.com'
+            },
+            { //What type of loan will you be needing? refinance 
+                typeOfloan: 'option[value="Home Equity"]',
+                //What type of property are you purchasing? Single Family Home
+                typeOfProperty: 'option[value="Condo"]',
+                //In what city will the property be located?
+                propertyLocate: 'Madison',
+                // What property are you looking to use the loan on? Primary Home
+                loanUse: 'button[value="Secondary Home"]',
+                //Have you already found your new home ? yes
+                foundHome: 'button[name="yesButton"]',
+                // Are you currently working with a real estate agent? yes
+                WorkingWithAgen: 'button[name="noButton"]',
+                //What is the estimated purchase price?
+                estimatedPrice: '250000',
+                //How much are you putting down as a down payment?
+                downPayment: '25000',
+                //Estimate your credit score Excellent
+                creditScore: 'button[value="poor"]',
+                //Have you had a bankruptcy or foreclosure in the past seven years? no
+                bankruptcy: 'button[value="Has had a foreclosure before"]',
+                //What is your address?
+                street: '1145st',
+                streetOptinal: 'apt1',
+                cityStateZip: '53965',
+                //What is your name ? first, last, email
+                firstName: 'Julian',
+                lastName: 'Benito',
+                email: 'benito@msn.com'

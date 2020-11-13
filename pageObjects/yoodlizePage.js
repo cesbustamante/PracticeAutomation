@@ -2,44 +2,43 @@ module.exports = {
     url: 'https://www.yoodlize.com/',
     elements: {
         category: {
-            selector: '//*[@id="rebass-provider"]/div/div[2]/div/div[1]/div[1]/div/div[2]/div',
+            selector: '//body',
             locateStrategy: 'xpath'
         },
-
         wait: {
             selector: '//*[@id="rebass-provider"]/div/div[1]/div/div[1]/div[1]/div/nav/div',
             locateStrategy: 'xpath'
         },
         seeAll1: {
-            selector: '//*[@id="rebass-provider"]/div/div[1]/div/div[3]/div[1]/div[1]/a/div',
+            selector: '(//div[@class="sc-jqCOkK djSgtl sc-gqjmRU fmVgeN"])[1]',
             locateStrategy: 'xpath'
         },
         seeAll2: {
-            selector: '//*[@id="rebass-provider"]/div/div[1]/div/div[3]/div[1]/div[5]/a/div',
+            selector: '(//div[@class="sc-jqCOkK djSgtl sc-gqjmRU fmVgeN"])[2]',
             locateStrategy: 'xpath'
         },
         seeAll3: {
-            selector: '//*[@id="rebass-provider"]/div/div[1]/div/div[3]/div[1]/div[8]/a/div',
+            selector: '(//div[@class="sc-jqCOkK djSgtl sc-gqjmRU fmVgeN"])[3]',
             locateStrategy: 'xpath'
         },
         seeAll4: {
-            selector: '//*[@id="rebass-provider"]/div/div[1]/div/div[3]/div[5]/div[1]/a/div',
+            selector: '(//div[@class="sc-jqCOkK djSgtl sc-gqjmRU fmVgeN"])[4]',
             locateStrategy: 'xpath'
         },
         seeAll5: {
-            selector: '//*[@id="rebass-provider"]/div/div[1]/div/div[3]/div[5]/div[4]/a/div',
+            selector: '(//div[@class="sc-jqCOkK djSgtl sc-gqjmRU fmVgeN"])[5]',
             locateStrategy: 'xpath'
         },
         seeAll6: {
-            selector: '//*[@id="rebass-provider"]/div/div[1]/div/div[3]/div[5]/div[7]/a/div',
+            selector: '(//div[@class="sc-jqCOkK djSgtl sc-gqjmRU fmVgeN"])[6]',
             locateStrategy: 'xpath'
         },
         seeAll7: {
-            selector: '//*[@id="rebass-provider"]/div/div[1]/div/div[3]/div[5]/div[10]/a/div',
+            selector: '(//div[@class="sc-jqCOkK djSgtl sc-gqjmRU fmVgeN"])[7]',
             locateStrategy: 'xpath'
         },
         back: {
-            selector: '//*[@id="rebass-provider"]/div/div[1]/div/nav/div/div[1]/a',
+            selector: '//a[@class="_2oS_y _1BgQy navbar-brand"]',
             locateStrategy: 'xpath'
         },
 

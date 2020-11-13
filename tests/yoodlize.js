@@ -20,14 +20,15 @@ module.exports = {
             .pause(pause)
             .verify.containsText('@category', 'Recreational Vehicles')
             //click to go back main page
-            // pageObject
+        pageObject
             .click('@back')
             // see all OUTDOOR GEAR
             .waitForElementVisible('@wait')
             .click('@seeAll2')
             .pause(pause)
             .verify.containsText('@category', 'Outdoor Gear')
-            // click to go back main page pageObject
+        pageObject
+        // click to go back main page pageObject
             .click('@back')
             // see all ELECTRONICSS
             .waitForElementVisible('@wait')

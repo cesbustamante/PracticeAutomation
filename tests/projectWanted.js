@@ -31,6 +31,7 @@ var wantedFields = (browser, header, MKE, OriginatingAgencyIdentifier, name,
         // .verify.containsText('@errorlist', 'The "Hair" field should be 3 to 10 characters long')
         // .verify.containsText('@errorlist', 'The "Offense" field should be between 5 to 15 characters long')
         // .verify.containsText('@errorlist', 'The "Date of Warrant" 10 characters in length, numeric in MM/DD/YYYY format (allows dates from 1900 to today +1 day, to account for time zone differences)')
+        //let errorChecker = function(wantedPage, warrantInfo, expectedErrors){}
 
 }
 var wanted = {}
@@ -50,7 +51,7 @@ module.exports = {
         //Date to today +1 day, to account for time zone differences
         wantedFields(wanted, 'ABDOMINOHYSTEROTOMY', 'ABCD', 'Something',
             'pseudopseudohypoparathyroidism', '@unknown', '@runknown',
-            '578', '230', 'Skateboard', 'Prognostication', '12092020')
+            '578', '230', 'Skateboard', 'Prognostication', '13092020')
     },
     'boundary min': browser => {
         //Header 9 any allowed, MKE, 2 alpga, Origination 9alpha, Name 3 any allowed
@@ -59,6 +60,21 @@ module.exports = {
         wantedFields(wanted, 'Elizabeth', 'AB', 'Something',
             'cdf', '@female', '@asian',
             '578', '2', 'bla', 'Abate', '01011900')
-
-    }
+    },
+    'boundary before max': browser => {
+        //Header 18 any allowed, MKE, 3 alpga, Origination 9alpha, Name 29 any allowed
+        //Sex Unknown, Race Unknown, Heigh 3, Weaight 2, Hair 9 alpha, Offense 15 any allowed
+        //Date to today +1 day, to account for time zone differences
+        wantedFields(wanted, 'ABDOMINOHYSTEROTOM', 'ABC', 'Somethin',
+            'pseudopseudohypoparathyroidis', '@unknown', '@runknown',
+            '578', '23', 'Skateboar', 'Prognosticatio', '12092020')
+    },
+    'boundary before min': browser => {
+        //Header 10 any allowed, MKE 3 alpga, Origination 9alpha, Name 4 any allowed
+        //Sex Unknown, Race Unknown, Heigh 3, Weaight 2, Hair 4 alpha, Offense 6 any allowed
+        //Date to today +1 day, to account for time zone differences
+        wantedFields(wanted, 'Elizabethh', 'ABCD', 'Something',
+            'pseu', '@unknown', '@runknown',
+            '578', '23', 'Skat', 'Progno', '02011900')
+    },
 }

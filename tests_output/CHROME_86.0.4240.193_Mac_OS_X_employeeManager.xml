@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="1"
+            tests="2">
+
+  <testsuite name="employeeManager"
+    errors="1" failures="1" hostname="" id="" package="employeeManager" skipped="1"
+    tests="2" time="6.821" timestamp="">
+  
+    <testcase name="It can add an employee" classname="employeeManager" time="0.5680" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="It can edit a new employee" classname="employeeManager" time="6.253" assertions="2">
+
+      <failure message="Expected element &lt;#employeeTitle&gt; text to equal: &#34;Dolly Berry&#34; in 500ms - expected &#34;equal &#39;Dolly Berry&#39;&#34; but got: &#34;Hank Hill&#34; (529ms)">    at module.exports (/Users/cesarbustamante/DevMountain/PracticeAutomation/testAssets/editTest.js:15:17)
+    at Object.It can edit a new employee (/Users/cesarbustamante/DevMountain/PracticeAutomation/employeeManager.js:23:9)</failure>
+
+    
+    <error message="Error while running &#34;element&#34; command: Expected element &lt;#employeeTitle&gt; text to equal: [0;33m&#34;Dolly Berry&#34;[0m in 500ms - expected [0;32m&#34;equal &#39;Dolly Berry&#39;&#34;[0m but got: [0;31m&#34;Hank Hill&#34;[0m[0;90m (529ms)[0m" type="error"><![CDATA[
+        at module.exports (/Users/cesarbustamante/DevMountain/PracticeAutomation/testAssets/editTest.js:15:17)
+    at Object.It can edit a new employee (/Users/cesarbustamante/DevMountain/PracticeAutomation/employeeManager.js:23:9)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+        NoSuchElementError: An error occurred while running .click() command on &lt;//li[text()=&#34;Dolly Berry&#34;]&gt;: 
+   {&#34;sessionId&#34;:&#34;44de0b0093ce4b256275dcaa1b8bb07b&#34;,&#34;status&#34;:0,&#34;value&#34;:[]}
+       at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    </system-err>
+  
+
+    
+
+  
+    
+    <testcase
+      name="It can edit an existing employee" classname="employeeManager">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="1">
+
+  <testsuite name="employee2"
+    errors="1" failures="0" hostname="" id="" package="employee2" skipped="2"
+    tests="1" time="0.6090" timestamp="">
+  
+    <testcase name="It can add an employee" classname="employee2" time="0.6090" assertions="1">
+
+    
+    <error message="Unknown property: &#34;editEmployee&#34;. Please consult docs at: http://nightwatchjs.org/api." type="error"><![CDATA[
+    Error: Unknown property: &#34;editEmployee&#34;. Please consult docs at: http://nightwatchjs.org/api.
+    at Object.get (/usr/local/lib/node_modules/nightwatch/node_modules/chai-nightwatch/lib/chai/core/assertions.js:57:17)
+    at Object.beforeEach (/Users/cesarbustamante/DevMountain/PracticeAutomation/employee2.js:8:13)
+    at Context.callAsync (/usr/local/lib/node_modules/nightwatch/lib/testsuite/context.js:395:20)
+    at Context.invokeMethod (/usr/local/lib/node_modules/nightwatch/lib/testsuite/context.js:346:21)
+    at /usr/local/lib/node_modules/nightwatch/lib/testsuite/hooks/_basehook.js:79:24
+    at new Promise (&lt;anonymous&gt;)
+    at BeforeAll.run (/usr/local/lib/node_modules/nightwatch/lib/testsuite/hooks/_basehook.js:54:14)
+    at Runnable.__runFn (/usr/local/lib/node_modules/nightwatch/lib/testsuite/index.js:186:35)
+    at Runnable.run (/usr/local/lib/node_modules/nightwatch/lib/testsuite/runnable.js:123:21)
+    at TestSuite.createRunnable (/usr/local/lib/node_modules/nightwatch/lib/testsuite/index.js:443:33)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+        Error: Unknown property: &#34;editEmployee&#34;. Please consult docs at: http://nightwatchjs.org/api.
+       at Object.beforeEach (/Users/cesarbustamante/DevMountain/PracticeAutomation/employee2.js:8:13)
+       at new Promise (&lt;anonymous&gt;)
+    </system-err>
+  
+
+    
+
+  
+    
+    <testcase
+      name="It can edit a new employee" classname="employee2">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="It can edit an existing employee" classname="employee2">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>
